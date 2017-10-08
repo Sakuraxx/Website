@@ -1,0 +1,60 @@
+a
+{
+	text-decoration: none;
+	text-align:center;
+	color: red;
+}
+
+.title
+{
+	height: 40px;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing:0.5em;
+	font-weight: bold;
+}
+.user
+{
+	margin-left: 1000px;
+}
+
+.header
+{
+	height:100px;
+}
+
+.title
+{
+	height: 70px;
+	margin:0 auto;
+	margin-right: 200px;
+	margin-top: 20px;
+	text-align: center;
+	font-family:"宋体";
+	font-size: 50px;
+	letter-spacing:0.5em;
+	font-weight: bold;
+}
+.xueyuan_logo
+{
+
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-left:80px;
+	margin-top: 10px;
+	background-image: url(img/xueyuan.png);
+	background-size: contain;
+}
+
+.xiehui_logo
+{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-left:30px;
+	margin-top:10px;
+	background-image: url(img/jixie.png);
+	background-size: contain;
+
+}

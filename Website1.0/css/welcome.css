@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*上半部分 放置图标*/
+body
+{
+	margin: 0;
+	height: 100%;
+	font-family:"宋体";
+	font-size: 14px;
+	background: transparent;
+	background-image: url(img/background.jpg);
+	background-size: 100%;
+}
+
+h1
+{
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 80px;
+	font-size: 24px;
+}
+p
+{
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 150px;
+}
+*/
+/*下半部分*/
+.main
+{
+	height:500px;
+}
+
+/*欢迎词的框*/
+.welcomebox
+{
+	position: absolute;
+	margin-top:80px;
+	margin-left: 400px;
+	width: 40%;
+	height: 55%;
+	text-align: center;
+}
