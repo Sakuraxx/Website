@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>APM Test</title>
+<link rel="stylesheet" type="text/css" href="css/apm.css" />
+<meta charset="utf-8" />
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/apm.js"></script>
+</head>
+<body>
+<div id="inputs">
+<form>
+<textarea name="text" id="text">
+</textarea>
+<button type="button" id="commit">提交</button>
+</form>
+</div>
+<div id="origin"></div>
+<div id="statistic">
+<ul id="result">
+<li id="time-used-txt">耗时：<span id="time-used">----.---</span>秒</li>
+<li id="input-count-txt">输入：<span id="input-count">----</span>次</li>
+<li id="text-count-txt">已输入字符：<span id="text-count">----</span>个</li>
+<li id="correct-count-txt">正确：<span id="correct-count">----</span>个</li>
+<li id="wrong-count-txt">错误：<span id="wrong-count">----</span>个</li>
+<li id="apm-txt">打字速度：<span id="apm">----.---</span>字/秒</li>
+<!--看上去你是个会查看源代码的同学啊，或许你应该试着了解一下JavaScript，那是赋予这个网页变化的东西-->
+</ul>
+</div>
+</body>
+</html>

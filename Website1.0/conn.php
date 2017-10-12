@@ -1,5 +1,5 @@
 <?php
-$db_connect = mysqli_connect('localhost','root','');
+$db_connect = mysqli_connect('p:localhost','root','123123123');
 mysqli_query($db_connect,'SET NAMES utf8');
 if (!$db_connect)
 {
