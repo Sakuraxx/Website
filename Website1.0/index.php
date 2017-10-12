@@ -3,7 +3,7 @@
 	session_start();
 	if(!isset($_SESSION['valid_name'])or!isset($_SESSION['valid_pwd']))
 	{
-		echo "YOU ARE NOT ALLOWED GET IN!";
+		header("Location:login.php");
 		exit;
 	}
 	

@@ -158,7 +158,7 @@
 							resultSet += '<div class="result-row">' + (corects[index] === 1 ? "<div class='correct'>#"+(index + 1)+"<span></span></div>": "<div class='wrong'>#"+(index + 1)+"<span></span></div>")+'</div>'; 
 							           
 						});
-						resultSet = '<h2 class="qTitle">' + judgeSkills(json.score) + '<br/> 您的分数： ' + json.score + '</h2><div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div>'; 
+						resultSet = '<h2 class="qTitle">' + judgeSkills(json.score) + '<br/> 您的分数： ' + json.score + '</h2><div class="jquizzy-clear"></div>' + resultSet + '<div class="jquizzy-clear"></div><button><a href="apm.html">continue</a></button>'; //buttom to apm
 									 
 									 
 						superContainer.find('.result-keeper').html(resultSet).show(500); 

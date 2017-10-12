@@ -106,6 +106,6 @@ function PostAnswer()
 	if(correct===question.length&&wrong===0)
 	{
 		//execute commit
-		$.post("apm_reciever.php",{"time":timePassed,"keydown":keyCount,"length":question.length},function(){alert("已提交");window.location.href="/"})
+		$.post("apm_reciever.php",{"time":timePassed,"keydown":keyCount,"length":question.length},function(){alert("已提交");/*window.location.href="/"*/})
 	}
 }
