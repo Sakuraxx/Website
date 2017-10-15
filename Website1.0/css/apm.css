@@ -1,0 +1,22 @@
+#inputs {
+	height:90%;
+	width:50%;
+	float:left;
+}
+#origin {
+	height:90%;
+	width:50%;
+	float:right;
+}
+#text {
+	height:40em;
+	width:90%;
+}
+
+#correct {
+	color:blue;
+}
+
+#wrong {
+	color:red;
+}
