@@ -2,7 +2,7 @@
 	session_start();
 	if(!isset($_SESSION['valid_name'])or!isset($_SESSION['valid_pwd']))
 	{
-		header("refresh:0;url=/login.php");
+		die('login');
 	}
 	require ('conn.php');
 	$sql = "select apm from apm where username = '$_SESSION[valid_name]'";
@@ -10,7 +10,7 @@
 	$row = mysqli_fetch_array($result);
 	if ($row['apm']!=null)
 	{
-		die('refresh:0;url=/rank.php');
+		die('finish');
 	}
 	$stmt = mysqli_prepare($db_connect,"insert into apm (username,timeused,keycount,apm) values (?,?,?,?)");
 	//"time":timePassed,"keydown":keyCount,"length":question.length
@@ -19,9 +19,9 @@
 	$result1 = mysqli_stmt_execute($stmt);
 	if(!$result1)
 	{
-		die('db error');
+		die('error');
 	}
 	else
 	{
-		header("refresh:0;url=/");
+		echo 'finish';
 	}

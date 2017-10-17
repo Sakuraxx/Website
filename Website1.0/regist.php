@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -144,7 +147,6 @@ input[type=text]:focus, input[type=password]:focus {
 		}
     </script>
 	<?php
-	session_start();
 	if ($_POST)
 	{
 		require('conn.php');

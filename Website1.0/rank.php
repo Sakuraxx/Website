@@ -38,7 +38,7 @@
 		
 		<div class="container">
 			<?php
-				include ('conn.php');
+				require ('conn.php');
 				$sql = "select name,score from users order by score desc ";
 				$result = mysqli_query($db_connect,$sql);
 				echo "<table> ";
@@ -53,6 +53,29 @@
 					$i++;
 				}
 				echo "</table>";
+				$sql = "select username,apm from apm order by apm desc ";
+				$result = mysqli_query($db_connect,$sql);
+				echo "<table> ";
+				$i=1;
+				while ($row = mysqli_fetch_array($result))
+				{
+					if($row['apm']==null)
+					{
+						$row['apm']=0;
+					}
+					echo "<tr><td align='center'>"."NO. ".$i."		"."</td><td>".$row['username']."</td><td>".$row['apm']."</td></tr>";
+					$i++;
+				}
+				echo "</table>";
+
+				$name = $_SESSION['valid_name'];
+				$sql = 'select users.name, users.score, apm.apm from users,apm where users.name = apm.username and users.name = "'.$name.'"' ;
+				$result = mysqli_query($db_connect,$sql);
+				$row =  mysqli_fetch_array($result);
+				if($row!=false)
+				{
+					echo '<p>'.$row['name'].', your rank in test1:'.$row['score']. 'and apm in test2:'.$row['apm'].'</p>';
+				}
 			?>
 		</div>
 		

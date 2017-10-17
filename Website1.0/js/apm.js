@@ -1,4 +1,4 @@
-var question = "苟利国家生死以，岂因祸福避趋之";
+var question = "1";
 var answer = "";
 var diffHTML;
 var keyCount = 0;
@@ -14,8 +14,9 @@ var cheatFlag = false;
 
 $("document").ready(function()
 {
-	//console.log('请发送邮件至scncgz@gmail.com，在标题注明：计算机协会-来自console');
+	console.log('请发送邮件至scncgz@gmail.com，在标题注明：计算机协会-来自console');
 	$("#origin").text(question);
+	$('#text').val(null);
 	$('#text').bind('input',AnswerChanged);
 	$('#text').bind('paste',AntiCheat);
 	$('#commit').bind('click',PostAnswer);
@@ -106,6 +107,22 @@ function PostAnswer()
 	if(correct===question.length&&wrong===0)
 	{
 		//execute commit
-		$.post("apm_reciever.php",{"time":timePassed,"keydown":keyCount,"length":question.length},function(){alert("已提交");/*window.location.href="/"*/})
+		$.post("apm_reciever.php",{"time":timePassed,"keydown":keyCount,"length":question.length},function(data,status){PostCallback(data,status)});
+	}
+	else
+	{
+		alert('please finish your text');
+	}
+}
+
+function PostCallback(data,status)
+{
+	console.log(data,status);
+	if(status!='success') alert('commit failed, please try again later');
+	else
+	{
+		if(data==='login') window.location.href='login.php';
+		else if(data==='finish') window.location.href='rank.php';
+		else alert('an error occured, please try again later');
 	}
 }
