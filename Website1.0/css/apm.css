@@ -20,3 +20,8 @@
 #wrong {
 	color:red;
 }
+
+html {
+	background-repeat: no-repeat;
+    background-image: url(/img/ngxf35.png);
+}
