@@ -8,7 +8,7 @@ body
 	font-family:"宋体";
 	font-size: 14px;
 	background: transparent;
-	background-image: url(img/background.jpg);
+	background-image: url(/img/background.jpg);
 	background-size: 100%;
 }
 img

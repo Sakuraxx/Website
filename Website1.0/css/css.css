@@ -43,7 +43,7 @@ a
 	height: 70px;
 	margin-left:80px;
 	margin-top: 10px;
-	background-image: url(img/xueyuan.png);
+	background-image: url(/img/xueyuan.png);
 	background-size: contain;
 }
 
@@ -54,7 +54,7 @@ a
 	height: 70px;
 	margin-left:30px;
 	margin-top:10px;
-	background-image: url(img/jixie.png);
+	background-image: url(/img/jixie.png);
 	background-size: contain;
 
 }
