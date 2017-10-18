@@ -8,8 +8,7 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="favicon.ico">
   <title>注册</title>
-  <link rel="stylesheet" type="text/css"   href="css/header.css">
-  <link rel="stylesheet" type="text/css"   href="css/footer.css">
+  <link rel="stylesheet" type="text/css"   href="css/css.css">
   <style type="text/css">
   html{
         font-size:14px;
@@ -146,7 +145,7 @@ input[type=text]:focus, input[type=password]:focus {
 			}
 		}
     </script>
-	<?php
+<?php
 	if ($_POST)
 	{
 		require('conn.php');
@@ -191,11 +190,12 @@ input[type=text]:focus, input[type=password]:focus {
 			}
 			else
 			{
-				echo '<script>alert("注册成功!")</script>';
-				header("refresh:0;url=login.php");
+        $_SESSION['valid_name'] = $name;
+        $_SESSION['valid_pwd'] = hash("sha256",$password);
+				echo '<script>alert("注册成功!");window.location.href=""</script>';
 			}
 		}
   }
-	?>
+?>
 </body>
 </html>

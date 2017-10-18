@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <?php
 	session_start();
 	if(!isset($_SESSION['valid_name'])or!isset($_SESSION['valid_pwd']))
 	{
-		echo "YOU ARE NOT ALLOWED GET IN!";
+		header("Location:login.php");
 		exit;
 	}
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -14,8 +14,7 @@
 	<link rel="icon" href="favicon.ico">
 	<title>趣味答题网站</title>
 	<link rel="stylesheet" type="text/css"   href="css/rank.css">
-	<link rel="stylesheet" type="text/css"   href="css/header.css">
-	<link rel="stylesheet" type="text/css"   href="css/footer.css">
+	<link rel="stylesheet" type="text/css"   href="css/css.css">
 </head>
 <body class="backgroundchange">
 	<div class="main">

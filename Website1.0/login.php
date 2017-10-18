@@ -6,8 +6,7 @@
 	<link rel="icon" href="favicon.ico">
 	<title>趣味答题网站登录</title>
 	<link rel="stylesheet" href="css/login.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/css.css">
 	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body >
@@ -53,9 +52,7 @@
 		{
 			require ('conn.php');
 			$name = $_POST['id'];
-			//$password = $_POST['password'];
 			$password = hash("sha256",$_POST['password']);
-			//$sql =  "select * from users where name = ? and password = ?";
 			$sql_p = mysqli_prepare($db_connect,"select * from users where name = ? and password = ?");
 			mysqli_stmt_bind_param($sql_p,'ss',$name,$password);
 	
