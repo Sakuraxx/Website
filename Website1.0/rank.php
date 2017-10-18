@@ -13,8 +13,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="favicon.ico">
 	<title>趣味答题网站</title>
-	<link rel="stylesheet" type="text/css"   href="css/rank.css">
-	<link rel="stylesheet" type="text/css"   href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<style type="text/css">
+a{
+	color: black;}
+.container{
+	padding: 0% 30%;
+	text-align:center;
+	font-size:20px;}
+table {
+	margin:auto;
+	border:10px;}
+	</style>
 </head>
 <body class="backgroundchange">
 	<div class="main">

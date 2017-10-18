@@ -24,8 +24,13 @@
 	<link rel="stylesheet" type="text/css"   href="css/answer.css">
 	<script src="js/jquery-3.2.1.min.js"></script> 
 	<script src="js/quiz1.js"></script> 
-	<link rel="stylesheet" href="css/styles.css" /> 
-	<link rel="stylesheet" type="text/css"   href="css/css.css">
+	<link rel="stylesheet" href="css/css.css" /> 
+	<style type="text/css">
+a{
+	color: black;}
+.container{
+	height:500px;}
+	</style>
 </head>
 <body class="backgroundchange">
 	<div class="main">

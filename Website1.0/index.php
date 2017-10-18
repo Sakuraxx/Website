@@ -15,6 +15,58 @@
 	<title>趣味答题网站</title>
 	<link rel="stylesheet" type="text/css"   href="css/main.css">
 	<link rel="stylesheet" type="text/css"   href="css/css.css">
+	<style type="text/css">
+a{
+	color: red;}
+.container{
+	height:500px;}
+.content{
+	position: relative;
+	top: 40px;
+	margin:auto;
+	margin-top: 30px;
+	height: 400px;
+	width: 800px;
+	border:0;
+	border-radius:5px;
+	background: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 4px rgba(255,255,255,0.2),0 0 4px rgba(255,255,255,0.2);}
+.slogan{
+	position: relative;
+	top: 20px;
+	margin: auto;
+	height: 200px;
+	width: 750px;
+	text-align: center;
+	border:1px solid black;}
+.entry{
+	position: relative;
+	top: 50px;
+	margin:auto;
+	height: 100px;
+	width: 750px;}
+.buttom{
+	height: 40px;
+	width: 80px;
+	background-color:rgb(217,223,198);
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	text-align:center;
+	border: 0;
+	border-radius:200px;
+	padding-top: 15px;}
+.buttom:hover{
+	background-color: #999966;}
+.game{
+	float: left;
+	margin-top:10px;
+	margin-left: 80px;}
+.ranking{
+	float: left;
+	margin-top:10px;
+	margin-left: 120px;}
+	</style>
 
 </head>
 <body class="backgroundchange">

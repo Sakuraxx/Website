@@ -10,9 +10,7 @@ session_start();
   <title>注册</title>
   <link rel="stylesheet" type="text/css"   href="css/css.css">
   <style type="text/css">
-  html{
-        font-size:14px;
-        background-image: url(img/background.jpg);
+  body{
         background-attachment: fixed;
         background-size: contain;}
   fieldset{
@@ -49,8 +47,6 @@ session_start();
     border-radius: 5px;}
   span{
     color:red;}
-
-
   input[type=text], input[type=password] {
   padding: 0 10px;
   width: 300px;
@@ -60,13 +56,7 @@ session_start();
   background: rgba(0, 0, 0, 0.16);
   border: 0;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
-}
-input[type=text]:focus, input[type=password]:focus {
-  color: white;
-  background: rgba(0, 0, 0, 0.1);
-  outline: 0;
 }
 
   </style>

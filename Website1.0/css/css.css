@@ -1,18 +1,20 @@
+body
+{
+	margin: 0;
+	height: 100%;
+	font-family:"微软雅黑";
+	font-size: 14px;
+	background: transparent;
+	background-image: url(/img/bgimg.jpg);
+	background-size: 100%;
+}
+
 a
 {
 	text-decoration: none;
 	text-align:center;
-	color: red;
 }
 
-.title
-{
-	height: 40px;
-	text-align: center;
-	font-size: 50px;
-	letter-spacing:0.5em;
-	font-weight: bold;
-}
 .user
 {
 	margin-left: 1000px;
@@ -25,19 +27,16 @@ a
 
 .title
 {
-	height: 70px;
-	margin:0 auto;
-	margin-right: 200px;
-	margin-top: 20px;
+	padding-top: 0.5em;
+	margin: 0 30%;
 	text-align: center;
-	font-family:"宋体";
-	font-size: 50px;
-	letter-spacing:0.5em;
+	font-family:"华文行楷";
+	font-size: 3.4em;
+	letter-spacing:0.3em;
 	font-weight: bold;
 }
 .xueyuan_logo
 {
-
 	float: left;
 	width: 70px;
 	height: 70px;
@@ -61,6 +60,7 @@ a
 
 .footer
 {
+	margin-top:2em;
 	height: 33px;
 	text-align: center;
 }
