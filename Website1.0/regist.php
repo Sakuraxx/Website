@@ -190,7 +190,7 @@ input[type=text]:focus, input[type=password]:focus {
 			else
 			{
 				echo '<script>alert("注册成功!")</script>';
-				header("refresh:0;url=login.php");
+				header("refresh:0;url=/login.php");
 			}
 		}
   }

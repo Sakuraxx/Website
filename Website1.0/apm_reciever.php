@@ -10,7 +10,7 @@
 	$row = mysqli_fetch_array($result);
 	if ($row['apm']!=null)
 	{
-		die('refresh:0;url=/rank.php');
+		die('refresh:0;url=/rank.php');	
 	}
 	$stmt = mysqli_prepare($db_connect,"insert into apm (username,timeused,keycount,apm) values (?,?,?,?)");
 	//"time":timePassed,"keydown":keyCount,"length":question.length
@@ -23,5 +23,5 @@
 	}
 	else
 	{
-		header("refresh:0;url=/");
+		header("refresh:0;url=index.php");
 	}

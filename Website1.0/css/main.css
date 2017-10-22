@@ -5,7 +5,7 @@ body
 	font-family:"宋体";
 	font-size: 14px;
 	background: transparent;
-	background-image: url(img/2.jpg);
+	background-image: url(../img/background.gif);
 	background-size: 100%;
 }
 
@@ -83,14 +83,21 @@ a
 {
 	float: left;
 	margin-top:10px;
-	margin-left: 80px;
+	margin-left: 40px;
+}
+
+.apm
+{
+	float: left;
+	margin-top:10px;
+	margin-left: 70px;
 }
 
 .ranking
 {
 	float: left;
 	margin-top:10px;
-	margin-left: 120px;
+	margin-left: 100px;
 }
 /*
 .backgroundchange
