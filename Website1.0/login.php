@@ -21,11 +21,11 @@
 				<form action="login.php" method="post" onsubmit="return user_input()" accept-charset="utf-8">
 					<h1>趣味答题网站登录界面</h1>
 					<div class="inputuser">
-					    <label for="login">User&nbsp;&nbsp;</label>
+					    <label for="login">User&nbsp;</label>
 					    <input type="text" name="id" id="id" value="">
 				    </div>
 				    <div class="inputpwd">
-					    <label for="password">Password</label>
+					    <label for="password">Password&nbsp;</label>
 					    <input type="password" name="password" id="password" value="">
 				    </div>
 				

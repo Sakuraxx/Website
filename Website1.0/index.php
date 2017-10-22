@@ -50,6 +50,13 @@
 						</buttom>
 					</div>
 
+					<div class="apm">
+						<buttom type="submit" name="apm"
+						class="apm buttom" value="Apm">
+						<a href="apm.html">打字</a>
+						</buttom>
+					</div>
+
 					<div class="ranking">
 						<buttom type="submit" name="ranking"
 						class="ranking buttom" value="Ranking">

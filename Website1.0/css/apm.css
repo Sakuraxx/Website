@@ -1,22 +1,69 @@
-#inputs {
-	height:90%;
-	width:50%;
+body
+{
+	margin: 0;
+	height: 100%;
+	font-family:"宋体";
+	font-size: 14px;
+	background: transparent;
+	background-image: url(../img/background.gif);
+	background-size: 100%;
+}
+
+textarea
+{
+	resize: none;
+}
+
+.middle
+{
+	height: 550px;
+}
+
+.midbox
+{
+	height: 500px;
+	margin:auto;
+}
+
+
+#inputs 
+{
+
 	float:left;
+	margin-left: 200px;
 }
-#origin {
-	height:90%;
-	width:50%;
-	float:right;
-}
-#text {
-	height:40em;
+
+
+#text/*输入框*/ 
+{
+	height:20em;
 	width:90%;
 }
 
-#correct {
+.statistic
+{
+	float: left;
+	margin-left:50px;
+}
+
+#origin 
+{
+	height:20%;
+	width:50%;
+	float:left;
+}
+
+#correct 
+{
 	color:blue;
 }
 
-#wrong {
+#wrong 
+{
 	color:red;
+}
+
+.buttom
+{
+	margin-left: 50px;
 }
