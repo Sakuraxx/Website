@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <?php
 	session_start();
 	if(!isset($_SESSION['valid_name'])or!isset($_SESSION['valid_pwd']))
 	{
-		echo "YOU ARE NOT ALLOWED GET IN!";
+		header("Location:login.php");
 		exit;
 	}
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -14,8 +14,7 @@
 	<link rel="icon" href="favicon.ico">
 	<title>趣味答题网站</title>
 	<link rel="stylesheet" type="text/css"   href="css/rank.css">
-	<link rel="stylesheet" type="text/css"   href="css/header.css">
-	<link rel="stylesheet" type="text/css"   href="css/footer.css">
+	<link rel="stylesheet" type="text/css"   href="css/css.css">
 </head>
 <body class="backgroundchange">
 	<div class="main">
@@ -38,7 +37,7 @@
 		
 		<div class="container">
 			<?php
-				include ('conn.php');
+				require ('conn.php');
 				$sql = "select name,score from users order by score desc ";
 				$result = mysqli_query($db_connect,$sql);
 				echo "<table> ";
@@ -53,6 +52,29 @@
 					$i++;
 				}
 				echo "</table>";
+				$sql = "select username,apm from apm order by apm desc ";
+				$result = mysqli_query($db_connect,$sql);
+				echo "<table> ";
+				$i=1;
+				while ($row = mysqli_fetch_array($result))
+				{
+					if($row['apm']==null)
+					{
+						$row['apm']=0;
+					}
+					echo "<tr><td align='center'>"."NO. ".$i."		"."</td><td>".$row['username']."</td><td>".$row['apm']."</td></tr>";
+					$i++;
+				}
+				echo "</table>";
+
+				$name = $_SESSION['valid_name'];
+				$sql = 'select users.name, users.score, apm.apm from users,apm where users.name = apm.username and users.name = "'.$name.'"' ;
+				$result = mysqli_query($db_connect,$sql);
+				$row =  mysqli_fetch_array($result);
+				if($row!=false)
+				{
+					echo '<p>'.$row['name'].', your rank in test1:'.$row['score']. 'and apm in test2:'.$row['apm'].'</p>';
+				}
 			?>
 		</div>
 		

@@ -1,4 +1,4 @@
-body
+﻿body
 {
 	margin: 0;
 	height: 100%;
@@ -21,30 +21,3 @@ a
 {
 	height:500px;
 }
-
-
-
-/*
-.backgroundchange
-{
-	-webkit-animation:bgchange 10s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function:ease-in;
-}
-
-@-webkit-keyframes bgchange
-{
-	0%
-	{
-		background: url(img/10.jpg);
-	}
-	50%
-	{
-		background: url(img/12.jpg);
-	}
-	100%
-	{
-		background: url(img/13.jpg);
-	}
-}
-*/
