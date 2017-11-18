@@ -23,7 +23,7 @@
 			<div class="xueyuan_logo"></div><!--这里放学院logo-->
 			<div class="xiehui_logo"></div><!--这里放协会logo-->
 			<div class="title">
-				趣味答题网站
+				趣味答题
 			</div>
 		</div>
 
@@ -51,7 +51,7 @@
 					<div class="apm">
 						<buttom type="submit" name="apm"
 						class="apm buttom" value="Apm">
-						<a href="apm.html">打字</a>
+						<a href="apm.php">打字</a>
 						</buttom>
 					</div>
 

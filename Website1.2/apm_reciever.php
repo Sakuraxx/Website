@@ -17,6 +17,16 @@
 	$apm = $_POST['time']/$_POST['length'];
 	mysqli_stmt_bind_param($stmt,'ssss',$_SESSION['valid_name'],$_POST['time'],$_POST['keydown'],$apm);
 	$result1 = mysqli_stmt_execute($stmt);
+
+	//更新users表中的成绩
+	/*$sql = "select score from users where name = '$_SESSION[valid_name]'";
+	$result2 = mysqli_query($db_connect,$sql);
+	$row = mysql_fetch_array($result2);
+	$totalscore = $row['score'] + $apm; 
+	$sql = "update users set score = $totalscore where name = '$_SESSION[valid_name]' ";
+	mysql_query($db_connect,$sql);
+	*/
+
 	if(!$result1)
 	{
 		die('error');

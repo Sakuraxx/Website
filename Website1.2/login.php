@@ -68,6 +68,7 @@
 			{
 				$_SESSION['valid_name'] = $name;
 				$_SESSION['valid_pwd'] = $password;
+				$_SESSION['testone'] = 0;//先做完答题test1才可以测试字速
 				header("Location:index.php");
 			}
 			else

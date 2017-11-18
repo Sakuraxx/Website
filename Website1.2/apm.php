@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if($_SESSION['test1'] != 1)
+	{
+		header("Location:index.php");
+	}
+?>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -23,8 +30,8 @@
 		<div class="user-information">
 			<div class="user">
 				<a href="logout.php">退出登录</a>&nbsp;&nbsp;
-			<!--	小可爱:<?php echo $_SESSION['valid_name'];?>
-				&nbsp;&nbsp;-->
+				小可爱:<?php echo $_SESSION['valid_name'];?>
+				&nbsp;&nbsp;
 				<a href="index.php">返回主页</a>
 			</div>
 		</div>
