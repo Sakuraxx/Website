@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+	session_start();
+	if($_SESSION['test1'] != 1)
+	{
+		header("Location:index.php");
+	}
+?>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -23,8 +30,8 @@
 		<div class="user-information">
 			<div class="user">
 				<a href="logout.php">退出登录</a>&nbsp;&nbsp;
-			<!--	小可爱:<?php echo $_SESSION['valid_name'];?>
-				&nbsp;&nbsp;-->
+				小可爱:<?php echo $_SESSION['valid_name'];?>
+				&nbsp;&nbsp;
 				<a href="index.php">返回主页</a>
 			</div>
 		</div>
@@ -37,13 +44,14 @@
 			<form>
 				<textarea name="text" id="text" cols="50" rows="20">
 				</textarea>
-				<button type="button" id="commit" class="submit">提交</button>
+				<!--<button type="button" id="commit" class="submit">提交</button>-->
 			</form>
 			</div>
 			
-			<div id="origin"></div>
-			
-			<div id="statistic" class="statistic">
+			<div id="statistic">
+				<span id="origin"></span>
+				<br />
+				<br />
 				<ul id="result">
 					<li id="time-used-txt">耗时：<span id="time-used">----.---</span>秒</li>
 					<li id="input-count-txt">输入：<span id="input-count">----</span>次</li>
@@ -53,6 +61,7 @@
 					<li id="apm-txt">打字速度：<span id="apm">----.---</span>字/秒</li>
 				<!--看上去你是个会查看源代码的同学啊，或许你应该试着了解一下JavaScript，那是赋予这个网页变化的东西-->
 				</ul>
+				<button type="button" id="commit" class="submit">提交</button>
 			</div>
 
 		</div>

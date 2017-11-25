@@ -1,4 +1,5 @@
-var question = "1";
+var question = "The Communists turn their attention chiefly to Germany, because that country is on the eve of a bourgeois revolution that is bound to be carried out under more advanced conditions of European civilisation and with a much more developed proletariat than that of England was in the seventeenth, and France in the eighteenth century, and because the bourgeois revolution in Germany will be but the prelude to an immediately following proletarian revolution. In short, the Communists everywhere support every revolutionary movement against the existing social and political order of things. In all these movements, they bring to the front, as the leading question in each, the property question, no matter what its degree of development at the time. Finally, they labour everywhere for the union and agreement of the democratic parties of all countries. The Communists disdain to conceal their views and aims. They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions. Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!";
+var hint = "你们呐，不要老想着搞个大新闻，把我们批判一番。你们呐，too young too simple, sometimes naive!";
 var answer = "";
 var diffHTML;
 var keyCount = 0;
@@ -32,7 +33,7 @@ function AnswerChanged()
 {
 	if(cheatFlag)
 	{
-		$('#text').val('no zuo no die');
+		$('#text').val(hint);
 		cheatFlag = false;
 		return;
 	}

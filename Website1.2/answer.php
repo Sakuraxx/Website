@@ -14,6 +14,7 @@
 	{
 		header("Location:index.php");
 	}
+	$_SESSION['test1'] = 1;
 ?>
 <html>
 <head>

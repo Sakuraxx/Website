@@ -5,7 +5,7 @@ body
 {
 	margin: 0;
 	height: 100%;
-	font-family:"宋体";
+	font-family:"华康少女";
 	font-size: 14px;
 	background: transparent;
 	background-image: url(../img/login.gif);
@@ -76,18 +76,6 @@ a
 	height: 80px;
 }
 
-.regist
-{
-	position: absolute;
-	float: left;
-	width: 80px;
-	height: 40px;
-	margin-top: 30px;
-	margin-left:130px;
-	text-align: center;
-
-
-}
 
 .submit
 {
@@ -96,7 +84,7 @@ a
 	width: 120px;
 	height: 40px;
 	margin-top: 30px;
-	margin-left:230px;
+	margin-left:200px;
 	text-align: center;
 }
 

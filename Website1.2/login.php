@@ -31,9 +31,6 @@
 				    </div>
 				
 				    <div class="login_submit">
-				    	<div class="regist">
-				    		<a href="regist.php">Regist</a>
-				    	</div>
 				        <div class="submit">
 				        	<button type="submit" class="buttom">Login</button>
 				        </div>
@@ -68,6 +65,7 @@
 			{
 				$_SESSION['valid_name'] = $name;
 				$_SESSION['valid_pwd'] = $password;
+				$_SESSION['testone'] = 0;//先做完答题test1才可以测试字速
 				header("Location:index.php");
 			}
 			else

@@ -192,14 +192,10 @@ input[type=text]:focus, input[type=password]:focus {
 			}
 			else
 			{
-<<<<<<< HEAD
-				echo '<script>alert("注册成功!")</script>';
-				header("refresh:0;url=/login.php");
-=======
-        $_SESSION['valid_name'] = $name;
-        $_SESSION['valid_pwd'] = hash("sha256",$password);
+
+				$_SESSION['valid_name'] = $name;
+				$_SESSION['valid_pwd'] = hash("sha256",$password);
 				echo '<script>alert("注册成功!");window.location.href=""</script>';
->>>>>>> zch_edited
 			}
 		}
   }
